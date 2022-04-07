@@ -1,0 +1,21 @@
+.search-box {
+  margin: 28px 0;
+  width: 50%;
+  height: 40px;
+  border: 1px solid rgb(117, 114, 114);
+  -webkit-box-shadow: -1px 5px 10px 5px rgba(0, 0, 0, 0.26);
+  box-shadow: -1px 5px 10px 5px rgba(0, 0, 0, 0.26);
+}
+
+.search-box:hover,
+.search-box:focus {
+  border: none;
+  outline: 1px solid var(--color-focus);
+}
+
+.search-box::placeholder,
+.search-box[type="text"] {
+  padding-left: 18px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}

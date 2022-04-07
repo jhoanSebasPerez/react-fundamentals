@@ -1,0 +1,57 @@
+.modal-form {
+  width: 90%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: lightgrey;
+}
+
+.modal-form label {
+  text-align: center;
+  margin: 24px 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.modal-form textarea {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+.modal-form textarea:focus,
+.modal-form textarea:hover {
+  outline: solid var(--color-focus);
+}
+
+.modal-form .buttons-container {
+  margin: 24px 0 32px;
+}
+
+.buttons-container .btn {
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn.btn-secondary {
+  background-color: lightgrey;
+  margin-right: 24px;
+}
+
+.btn.btn-primary {
+  background-color: var(--color-focus);
+}
+
+.btn.btn-primary:hover {
+  background-color: rgb(52, 52, 90);
+  text-decoration: underline;
+  color: white;
+}
+
+.btn.btn-secondary:hover {
+  background-color: grey;
+  text-decoration: underline;
+}
