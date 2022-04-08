@@ -10,6 +10,7 @@ import ModalForm from "../ModalForm";
 import TodosLoading from "../TodosLoading";
 import TodoError from "../TodoError";
 import TodosEmpty from "../TodosEmpty";
+import TodoHeader from "../TodoHeader";
 
 const AppUI = () => {
   const {
@@ -19,12 +20,18 @@ const AppUI = () => {
     handleCheck,
     handleDelete,
     viewModal,
+    completedTodos,
+    totalTodos,
+    searchText,
+    setSearchText,
   } = useContext(todoContext);
 
   return (
     <>
-      <Count />
-      <Search />
+      <TodoHeader>
+        <Count completedTodos={completedTodos} totalTodos={totalTodos} />
+        <Search searchText={searchText} setSearchText={setSearchText} />
+      </TodoHeader>
       <TodoList>
         {error && <TodoError />}
         {loading && <TodosLoading />}

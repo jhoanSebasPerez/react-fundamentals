@@ -3,7 +3,7 @@ import "./Modal.css";
 
 const Modal = ({ children }) => {
   return ReactDOM.createPortal(
-    <div class="modal-container">{children}</div>,
+    <div className="modal-container">{children}</div>,
     document.getElementById("modal")
   );
 };

@@ -1,10 +1,6 @@
-import { useContext } from "react";
-import { todoContext } from "../../contexts/TodoContext";
 import "./Count.css";
 
-const Count = () => {
-  const { completedTodos, totalTodos } = useContext(todoContext);
-
+const Count = ({ completedTodos, totalTodos }) => {
   return (
     <h2 className="count-title">
       You have completed {completedTodos} tasks out of {totalTodos}

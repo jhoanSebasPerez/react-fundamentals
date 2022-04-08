@@ -84,7 +84,7 @@ const TodoProvider = (props) => {
 
   const addTodo = (text) => {
     const copyTodos = [...todos];
-    copyTodos.push({ id: copyTodos.length, text, completed: false });
+    copyTodos.push({ id: copyTodos.length + 1, text, completed: false });
     saveTodos(copyTodos);
   };
 
